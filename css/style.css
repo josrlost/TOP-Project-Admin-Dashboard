@@ -120,23 +120,21 @@ main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    
+    grid-template-columns: 3fr 1fr;
 }
 
 main > div.projectsDiv {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(15%, 25%));
+    grid-template-rows: repeat(auto-fit, minmax(10%, 25%));
     gap: 15px;
-  
+    
 }
 
 div.projectsDiv .articleCard {
     height: 200px;
     background-color: black;
     color: aliceblue;
-    
-    
+    width: 1fr;
 }
