@@ -69,6 +69,10 @@ header > div.userInfo > div.welcomeMessage {
     align-items: center;
 }
 
+header p {
+    font-weight: bold;
+}
+
 div.welcomeMessage > div.adminWelcome > p:last-child {
     font-size: 1.5rem;
 }
@@ -81,7 +85,7 @@ header > div.userInfo > div.btnSection {
 }
 
 /* ---------- */
-
+/* Sidebar elements */
 
 aside {
     background-color: palevioletred;
@@ -89,7 +93,24 @@ aside {
     grid-row: 1 / 3;
     height: 100%;
     display: grid;
+    grid-template-rows: 1fr 8fr;
 }
+
+aside > .sidebarTitle {
+    grid-row: 1 / 2;
+    background-color: aqua;
+}
+
+aside > .sidebarWidgets {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5%;
+}
+
+
+
+/* ---------- */
 
 main {
     background-color: beige;
