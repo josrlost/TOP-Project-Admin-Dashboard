@@ -207,3 +207,10 @@ main > .annSection {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+.trendingDiv > .trendingCard {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: white;
+}
