@@ -121,7 +121,7 @@ main {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 13fr
+    grid-template-rows: 1fr 14fr
 }
 
 main > p:first-child {
@@ -139,6 +139,7 @@ main > p.annoucementsTitle {
     align-self: center;
     font-size: 1.2rem;
     font-weight: bold;
+    padding-left: 44px;
 }
 
 main > div.projectsDiv {
@@ -156,14 +157,34 @@ div.projectsDiv .articleCard {
     background-color: black;
     color: aliceblue;
     width: 100%;
-    
 }
 
-.articleCard > .articleTitle {
-    
+main > .annSection {
+    grid-column: 2 / 3 ;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1.2fr 2fr;
+    background-color: aliceblue;
 }
 
-.articleCard > .articleContent {
-    
-    
+.annSection > .annDiv {
+    justify-self: center;
+    font-size: calc(1rem - 3px);
+    width: 80%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.annDiv .announceTitle {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.annDiv > div {
+    width: 80%;
+    align-self: center;
 }
