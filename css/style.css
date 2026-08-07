@@ -164,12 +164,13 @@ main > .annSection {
     display: grid;
     grid-template-rows: 1.2fr 2fr;
     background-color: aliceblue;
+    gap: 60px;
 }
 
 .annSection > .annDiv {
     justify-self: center;
     font-size: calc(1rem - 3px);
-    width: 77%;
+    width: 22vw;
     height: 30vh;
     padding: 0 10px;
     background-color: cadetblue;
@@ -198,7 +199,7 @@ main > .annSection {
 .annSection > .trendingDiv {
     height: 40vh;
     width: 22vw;
-    background-color: chartreuse;
+    background-color: aliceblue;
     justify-self: center;
 }
 
