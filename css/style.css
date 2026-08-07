@@ -164,12 +164,17 @@ div.projectsDiv .articleCard {
 }
 
 .articleCard > div.textualDiv {
-    padding-left: 50px; /* Provisional solution to being unable to center with flex box */
+    padding-left: 3vw; /* Provisional solution to being unable to center with flex box */
     overflow: hidden;
 }
 
+div.textualDiv > p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .articleCard > .logosDiv {
-    padding-left: 18vw;
+    padding-left: 16vw;
 }
 
 main > .annSection {
@@ -178,7 +183,7 @@ main > .annSection {
     display: grid;
     grid-template-rows: 1.2fr 2fr;
     background-color: aliceblue;
-    gap: 60px;
+    gap: 10vh;
 }
 
 .annSection > .annDiv {
