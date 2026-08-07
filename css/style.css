@@ -121,7 +121,7 @@ main {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 14fr
+    grid-template-rows: 1fr 17fr
 }
 
 main > p:first-child {
@@ -139,7 +139,7 @@ main > p.annoucementsTitle {
     align-self: center;
     font-size: 1.2rem;
     font-weight: bold;
-    padding-left: 44px;
+    padding-left: 60px;
 }
 
 main > div.projectsDiv {
@@ -170,7 +170,7 @@ main > .annSection {
 .annSection > .annDiv {
     justify-self: center;
     font-size: calc(1rem - 3px);
-    width: 80%;
+    width: 77%;
     height: 100%;
     padding: 0 10px;
     background-color: cadetblue;
@@ -187,4 +187,14 @@ main > .annSection {
 .annDiv > div {
     width: 80%;
     align-self: center;
+    border-bottom: 1px solid black;
+}
+
+.annDiv > .trendingDiv {
+    
+}
+
+.trendingTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
