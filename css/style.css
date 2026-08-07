@@ -154,8 +154,17 @@ main > div.projectsDiv {
 
 div.projectsDiv .articleCard {
     height: 25vh;
+    width: 26vw;
     background-color: black;
     color: aliceblue;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.articleCard > div {
+    /*padding-left: 50px;*/
+    overflow: hidden;
 }
 
 main > .annSection {
