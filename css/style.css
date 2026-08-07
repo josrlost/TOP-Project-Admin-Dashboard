@@ -160,11 +160,16 @@ div.projectsDiv .articleCard {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    gap: 30px;
 }
 
-.articleCard > div {
-    /*padding-left: 50px;*/
+.articleCard > div.textualDiv {
+    padding-left: 50px; /* Provisional solution to being unable to center with flex box */
     overflow: hidden;
+}
+
+.articleCard > .logosDiv {
+    padding-left: 18vw;
 }
 
 main > .annSection {
@@ -208,7 +213,7 @@ main > .annSection {
 .annSection > .trendingDiv {
     height: 40vh;
     width: 22vw;
-    background-color: aliceblue;
+    background-color: green;
     justify-self: center;
 }
 
