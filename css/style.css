@@ -209,8 +209,18 @@ main > .annSection {
 }
 
 .trendingDiv > .trendingCard {
+    height: 33vh;
+    width: 22vw;
     display: flex;
     flex-flow: column;
     align-items: center;
     background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trendingCard > div {
+    display: flex;
+    gap: 20px;
 }
