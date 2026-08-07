@@ -120,21 +120,34 @@ main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 10fr
 }
 
 main > div.projectsDiv {
     grid-column: 1 / 2;
+    grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(10%, 25%));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(10%, 30%));
     gap: 15px;
-    
+    padding: 0 15px;
 }
 
 div.projectsDiv .articleCard {
     height: 100%;
     background-color: black;
     color: aliceblue;
-    width: 100%
+    width: 100%;
+    display: grid;
+   
+}
+
+.articleCard > .articleTitle {
+    align-self: center;
+}
+
+.articleCard > .articleContent {
+    align-self: center;
+    
 }
