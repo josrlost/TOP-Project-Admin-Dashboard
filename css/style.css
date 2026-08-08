@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url("../assets/fonts/Coolvetica-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --backgroundColorHeader: rgb(251, 247, 243);
     --sidebarColorFont: rgb(27, 14, 1);
@@ -6,6 +14,8 @@
     --backgroundColorAside: #fdd5bd;
     --backgroundColorMain: rgba(191, 146, 122, 0.586);
     --backgroundColorArticle: rgb(251, 239, 224);
+    font-family: 'Coolvetica', sans-serif;
+    letter-spacing: calc(0.1rem - 1px);
 }
 
 *, *::before, *::after {
