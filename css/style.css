@@ -18,6 +18,18 @@
     letter-spacing: calc(0.1rem - 1px);
 }
 
+:root.dark {
+    --backgroundColorHeader: rgb(245, 174, 103);
+    --sidebarColorFont: rgb(244, 229, 213);
+    --backgroundColorInput: rgba(63, 59, 55, 0.764);
+    --generalColorFont: rgba(42, 15, 2, 0.987) ;
+    --backgroundColorAside: #bd4a03e2;
+    --backgroundColorMain: rgba(44, 32, 25, 0.801);
+    --backgroundColorArticle: rgb(115, 99, 80);
+    font-family: 'Coolvetica', sans-serif;
+    letter-spacing: calc(0.1rem - 1px);
+}
+
 *, *::before, *::after {
     line-height: 1.5;
     margin: 0;
@@ -352,7 +364,7 @@ main > .annSection {
     justify-content: center;
     gap: 20px;
     border-radius: 15px;
-    box-shadow: 0px 3px 6px var(--sidebarColorFont);
+    box-shadow: 0px 3px 6px black;
 }
 
 .trendingCard > div {
