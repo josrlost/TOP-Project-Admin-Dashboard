@@ -56,7 +56,6 @@ header > div.profileWidget {
 header > div.userInfo {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    background-color: blueviolet;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
@@ -97,18 +96,40 @@ aside {
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 12fr;
+    gap: 5vh;
 }
 
 aside > .sidebarTitle {
     grid-row: 1 / 2;
-    background-color: aqua;
+    font-size: 1.5rem;
+    display: flex;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    font-weight: bold;
 }
 
 aside > .sidebarWidgets {
     grid-row: 2 / 3;
     display: flex;
     flex-flow: column nowrap;
-    gap: 5%;
+    gap: 8vh;
+    padding-left: 3vh;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.mainSidebarWidgets > .mainWidgetsDiv > p:hover, .lesserSidebarWidgets > div > p:hover {
+    font-size: calc(1.3rem - 1px);
+}
+
+.sidebarWidgets > .mainSidebarWidgets {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.sidebarWidgets > .mainSidebarWidgets > div {
+    display: flex;
 }
 
 
@@ -183,7 +204,6 @@ main > .annSection {
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: 1.2fr 2fr;
-    background-color: aliceblue;
     gap: 10vh;
 }
 
@@ -193,11 +213,11 @@ main > .annSection {
     width: 22vw;
     height: 30vh;
     padding: 0 10px;
-    background-color: cadetblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 15px;
+    background-color: cadetblue;
 }
 
 .annDiv .announceTitle {
