@@ -363,6 +363,7 @@ main > .annSection {
 .trendingCard > div > div {
     display: flex;
     gap: 1vw;
+    align-items: center;
 }
 
 .trendingCard > div > div > p:first-child {
