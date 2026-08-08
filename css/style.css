@@ -161,6 +161,7 @@ div.projectsDiv .articleCard {
     flex-flow: column;
     justify-content: center;
     gap: 30px;
+    border-radius: 12px;
 }
 
 .articleCard > div.textualDiv {
@@ -196,6 +197,7 @@ main > .annSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .annDiv .announceTitle {
@@ -218,7 +220,6 @@ main > .annSection {
 .annSection > .trendingDiv {
     height: 40vh;
     width: 22vw;
-    background-color: green;
     justify-self: center;
 }
 
@@ -237,6 +238,7 @@ main > .annSection {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    border-radius: 15px;
 }
 
 .trendingCard > div {
