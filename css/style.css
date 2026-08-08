@@ -357,5 +357,20 @@ main > .annSection {
 
 .trendingCard > div {
     display: flex;
-    gap: 20px;
+    gap: 1vw;
 }
+
+.trendingCard > div > div {
+    display: flex;
+    gap: 1vw;
+}
+
+.trendingCard > div > div > p:first-child {
+    font-weight: bold;
+}
+
+.trendingCard > div > img.userImg {
+    width: calc(3vw - 5px);
+    height: 5vh;
+    border-radius: 10px 100px / 120px;
+} 
