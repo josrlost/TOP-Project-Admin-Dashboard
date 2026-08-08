@@ -1,6 +1,5 @@
 :root {
     --backgroundColorHeader: rgb(251, 247, 243);
-    --articleColorFont: ;
     --sidebarColorFont: rgb(27, 14, 1);
     --backgroundColorInput: rgba(168, 147, 124, 0.764);
     --generalColorFont: rgba(35, 33, 32, 0.987) ;
@@ -196,6 +195,18 @@ aside > .sidebarWidgets {
     display: flex;
 }
 
+.sidebarWidgets > .changeThemeBtn > button {
+    margin-left: 2vw;
+    background-color: var(--backgroundColorInput);
+    border: none;
+    padding: 5px 11px;
+    border-radius: 14px;
+}
+
+.sidebarWidgets > .changeThemeBtn > button:hover {
+    background-color: rgb(255, 98, 0);
+    border: 2px dashed rgb(255, 196, 0);
+}
 
 /* ---------- */
 /* Main elements */
@@ -248,7 +259,7 @@ div.projectsDiv .articleCard {
     gap: 3vh;
     border-radius: 12px;
     border-left: var(--backgroundColorAside) 8px solid;
-
+    box-shadow: 0px 3px 6px var(--generalColorFont);
 }
 
 .articleCard > div.textualDiv {
@@ -263,6 +274,8 @@ div.textualDiv > p:first-child {
 
 .articleCard > .logosDiv {
     padding-left: 16vw;
+    display: flex;
+    gap: 1vw;
 }
 
 main > .annSection {
@@ -284,6 +297,8 @@ main > .annSection {
     justify-content: center;
     border-radius: 15px;
     background-color: var(--backgroundColorArticle);
+    gap: 1vh;
+    box-shadow: 0px 3px 6px var(--generalColorFont);
 }
 
 .annDiv .announceTitle {
@@ -307,7 +322,7 @@ main > .annSection {
     height: 40vh;
     width: 22vw;
     justify-self: center;
-    
+
 }
 
 .trendingTitle {
@@ -327,6 +342,7 @@ main > .annSection {
     justify-content: center;
     gap: 20px;
     border-radius: 15px;
+    box-shadow: 0px 3px 6px var(--sidebarColorFont);
 }
 
 .trendingCard > div {
