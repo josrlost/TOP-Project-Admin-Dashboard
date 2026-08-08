@@ -53,9 +53,6 @@ body {
     color: var(--generalColorFont);
 }
 
-/* ---------- */
-/* Header elements */
-
 header {
     background-color: var(--backgroundColorHeader);
     grid-column: 2 / 3;
@@ -154,10 +151,6 @@ header > div.userInfo > div.btnSection {
     gap: 5%;
 }
 
-
-/* ---------- */
-/* Sidebar elements */
-
 aside {
     background-color: var(--backgroundColorAside);
     grid-column: 1 / 2;
@@ -229,9 +222,6 @@ aside > .sidebarWidgets {
     background-color: rgb(255, 98, 0);
     border: 2px dashed rgb(255, 196, 0);
 }
-
-/* ---------- */
-/* Main elements */
 
 main {
     background-color: var(--backgroundColorMain);
