@@ -1,8 +1,12 @@
 :root {
-    --backgroundColorHeader: ;
-    --backgroundColorAside: #fd965a;
-    --leftBorderColorArticle: ;
-    --backgroundColorArticle: rgb(235, 166, 254);
+    --backgroundColorHeader: rgb(251, 247, 243);
+    --articleColorFont: ;
+    --sidebarColorFont: rgb(27, 14, 1);
+    --backgroundColorInput: rgba(168, 147, 124, 0.764);
+    --generalColorFont: rgba(35, 33, 32, 0.987) ;
+    --backgroundColorAside: #fdd5bd;
+    --backgroundColorMain: rgba(176, 175, 175, 0.31);
+    --backgroundColorArticle: rgb(251, 239, 224);
 }
 
 *, *::before, *::after {
@@ -25,21 +29,31 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 6fr;
+    color: var(--generalColorFont);
 }
 
 /* ---------- */
 /* Header elements */
 
 header {
-    background-color: aquamarine;
+    background-color: var(--backgroundColorHeader);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+    box-shadow: 5px 1px 8px rgb(34, 32, 32);
 }
 
+header button {
+    background-color: var(--backgroundColorAside);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 18px;
+    color: var(--sidebarColorFont);
+    font-weight: bold;
+}
 
 header > div.searchBarDiv {
     grid-column: 1 / 2;
@@ -61,10 +75,25 @@ header > div.userInfo {
     align-items: center;
 }
 
+header > div.searchBarDiv {
+    padding-left: 1vw;
+}
+
+header svg {
+    color: var(--sidebarColorFont);
+}
+
 header > div.searchBarDiv > input {
     width: 30vw;
+    margin-left: calc(1vh - 5px);
     border-radius: 10px;
     border: none;
+    background-color: var(--backgroundColorInput);
+}
+
+header > div.searchBarDiv > input:focus {
+    border: var(--backgroundColorAside) 2px solid;
+    outline: var(--backgroundColorAside);
 }
 
 header > div.userInfo > div.welcomeMessage {
@@ -92,22 +121,24 @@ header > div.userInfo > div.btnSection {
 /* Sidebar elements */
 
 aside {
-    background-color: red;
+    background-color: var(--backgroundColorAside);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 12fr;
     gap: 5vh;
+    color: var(--sidebarColorFont);
 }
 
 aside > .sidebarTitle {
     grid-row: 1 / 2;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
-    padding-left: 1vh;
+    padding-left: 3vh;
     padding-top: 1vh;
     font-weight: bold;
+    gap: 5px;
 }
 
 aside > .sidebarWidgets {
@@ -127,13 +158,21 @@ aside > .sidebarWidgets {
 .sidebarWidgets > .mainSidebarWidgets {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh
+}
+
+.mainSidebarWidgets > .mainWidgetsDiv {
+    gap: 1vw;
 }
 
 .sidebarWidgets .lesserSidebarWidgets {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh;
+}
+
+.lesserSidebarWidgets > .lesserWidgetsDiv {
+    gap: 1vw;
 }
 
 .sidebarWidgets > .mainSidebarWidgets > div, .lesserSidebarWidgets > div {
@@ -145,12 +184,12 @@ aside > .sidebarWidgets {
 /* Main elements */
 
 main {
-    background-color: gray;
+    background-color: var(--backgroundColorMain);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 13fr
+    grid-template-rows: 1fr 16fr
 }
 
 main > p:first-child {
@@ -184,13 +223,15 @@ main > div.projectsDiv {
 div.projectsDiv .articleCard {
     height: 25vh;
     width: 26vw;
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--backgroundColorArticle);
+    color: var(--articleColorFont);
     display: flex;
     flex-flow: column;
     justify-content: center;
     gap: 3vh;
     border-radius: 12px;
+    border-left: var(--backgroundColorAside) 8px solid;
+
 }
 
 .articleCard > div.textualDiv {
@@ -225,7 +266,7 @@ main > .annSection {
     flex-direction: column;
     justify-content: center;
     border-radius: 15px;
-    background-color: cadetblue;
+    background-color: var(--backgroundColorArticle);
 }
 
 .annDiv .announceTitle {
@@ -253,6 +294,7 @@ main > .annSection {
 }
 
 .trendingTitle {
+    padding-bottom: 1vh;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -263,7 +305,7 @@ main > .annSection {
     display: flex;
     flex-flow: column;
     align-items: center;
-    background-color: white;
+    background-color: var(--backgroundColorArticle);
     align-items: center;
     justify-content: center;
     gap: 20px;
